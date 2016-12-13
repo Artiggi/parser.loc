@@ -12,7 +12,7 @@ echo Chart::widget([
     'clientOptions' => [
         'data' => [
             'x' => 'x',
-            'type' => 'bar',
+            'type' => 'spline',
             'columns' => [
                 array_keys($stats),
                 array_values($stats),
@@ -24,18 +24,21 @@ echo Chart::widget([
         'axis' => [
             'x' => [
                 'label' => 'Day',
-                'type' => 'category'
+                'type' => 'timeseries',
+                'tick' =>[
+                    //'count' => 3,
+                    'format' => '%d.%m.%Y',
+                ],
             ],
             'y' => [
                 'label' => [
                     'text' => 'Views',
                     'position' => 'outer-top'
                 ],
-                'min' => 0,
-                'max' => 40,
-                'padding' => ['top' => 0, 'bottom' => 0]
+                'padding' => ['top' => 0, 'bottom' => 0],
             ]
         ]
+
     ]
 ]);
 
