@@ -18,12 +18,15 @@ class ComposerStaticInit6e0391835218381afeed4b02187e6892
         'y' => 
         array (
             'yii\\swiftmailer\\' => 16,
+            'yii\\mongodb\\' => 12,
             'yii\\gii\\' => 8,
             'yii\\faker\\' => 10,
             'yii\\debug\\' => 10,
             'yii\\composer\\' => 13,
             'yii\\bootstrap\\' => 14,
             'yii\\' => 4,
+            'yii2mod\\pie\\' => 12,
+            'yii2mod\\c3\\chart\\' => 17,
         ),
         'p' => 
         array (
@@ -79,6 +82,10 @@ class ComposerStaticInit6e0391835218381afeed4b02187e6892
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-swiftmailer',
         ),
+        'yii\\mongodb\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-mongodb',
+        ),
         'yii\\gii\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-gii',
@@ -102,6 +109,14 @@ class ComposerStaticInit6e0391835218381afeed4b02187e6892
         'yii\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2',
+        ),
+        'yii2mod\\pie\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yii2mod/yii2-pie',
+        ),
+        'yii2mod\\c3\\chart\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yii2mod/yii2-c3-chart',
         ),
         'phpDocumentor\\Reflection\\' => 
         array (

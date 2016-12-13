@@ -70,6 +70,14 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
 
             [
+                'label' => 'График',
+                'format' => 'html',
+                'value' => function($model){
+                    return Html::a('>>', ['product/graph', 'id' => $model->id]);
+                },
+            ],
+
+            [
                 'class' => 'yii\grid\ActionColumn',
                 'template' => '{update} {delete}',
             ],

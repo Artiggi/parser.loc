@@ -3051,5 +3051,265 @@
             }
         ],
         "description": "BDD assertion library for PHPUnit"
+    },
+    {
+        "name": "yiisoft/yii2-mongodb",
+        "version": "2.1.2",
+        "version_normalized": "2.1.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yiisoft/yii2-mongodb.git",
+            "reference": "4c809b59d640d083fcb39431e3087780fdb4f895"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/yiisoft/yii2-mongodb/zipball/4c809b59d640d083fcb39431e3087780fdb4f895",
+            "reference": "4c809b59d640d083fcb39431e3087780fdb4f895",
+            "shasum": ""
+        },
+        "require": {
+            "ext-mongodb": ">=1.0.0",
+            "yiisoft/yii2": "~2.0.5"
+        },
+        "time": "2016-10-31 11:04:20",
+        "type": "yii2-extension",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.1.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "yii\\mongodb\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Paul Klimov",
+                "email": "klimov.paul@gmail.com"
+            }
+        ],
+        "description": "MongoDb extension for the Yii framework",
+        "keywords": [
+            "active-record",
+            "mongo",
+            "mongodb",
+            "yii2"
+        ]
+    },
+    {
+        "name": "bower-asset/d3",
+        "version": "v3.5.17",
+        "version_normalized": "3.5.17.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/mbostock-bower/d3-bower.git",
+            "reference": "7a826d211d5067867debf9ce24a9987e0cb02b6e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/mbostock-bower/d3-bower/zipball/7a826d211d5067867debf9ce24a9987e0cb02b6e",
+            "reference": "7a826d211d5067867debf9ce24a9987e0cb02b6e",
+            "shasum": ""
+        },
+        "type": "bower-asset-library",
+        "extra": {
+            "bower-asset-main": "d3.js",
+            "bower-asset-ignore": []
+        },
+        "installation-source": "dist",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "A JavaScript visualization library for HTML and SVG."
+    },
+    {
+        "name": "bower-asset/c3",
+        "version": "0.4.11",
+        "version_normalized": "0.4.11.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/c3js/c3.git",
+            "reference": "223404a79246c61d150d8a209dbdc81f6955083b"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/c3js/c3/zipball/223404a79246c61d150d8a209dbdc81f6955083b",
+            "reference": "223404a79246c61d150d8a209dbdc81f6955083b",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/d3": "~3.5.0"
+        },
+        "type": "bower-asset-library",
+        "extra": {
+            "bower-asset-main": [
+                "c3.css",
+                "c3.js"
+            ],
+            "bower-asset-ignore": [
+                "**/.*",
+                "node_modules",
+                "bower_components",
+                "htdocs",
+                "spec",
+                "src",
+                "package.json",
+                "component.json",
+                "Gruntfile.*"
+            ]
+        },
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ],
+        "description": "D3-based reusable chart library",
+        "keywords": [
+            "chart",
+            "d3"
+        ]
+    },
+    {
+        "name": "bower-asset/d3pie",
+        "version": "0.1.5",
+        "version_normalized": "0.1.5.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/benkeen/d3pie.git",
+            "reference": "602933eb2891648fdf981be475cebbe794e92f74"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/benkeen/d3pie/zipball/602933eb2891648fdf981be475cebbe794e92f74",
+            "reference": "602933eb2891648fdf981be475cebbe794e92f74",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/d3": ">=3.4.0,<4.0.0",
+            "bower-asset/jquery": ">=2.0.0,<3.0.0"
+        },
+        "type": "bower-asset-library",
+        "extra": {
+            "bower-asset-ignore": [
+                ".*",
+                "node_modules",
+                "bower_components",
+                "website",
+                "d3pie-source"
+            ]
+        },
+        "installation-source": "dist",
+        "license": [
+            "MIT"
+        ],
+        "description": "A highly configurable, re-usable script built on d3.js and jQuery for creating clear, attractive pie charts.",
+        "keywords": [
+            "charts",
+            "d3",
+            "d3js",
+            "graphs",
+            "pie",
+            "piecharts",
+            "visualization"
+        ]
+    },
+    {
+        "name": "yii2mod/yii2-pie",
+        "version": "1.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yii2mod/yii2-pie.git",
+            "reference": "80c9783ca0e233830a6a9f357e88e05875616e43"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/yii2mod/yii2-pie/zipball/80c9783ca0e233830a6a9f357e88e05875616e43",
+            "reference": "80c9783ca0e233830a6a9f357e88e05875616e43",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/d3pie": "0.1.5",
+            "yiisoft/yii2": "*"
+        },
+        "time": "2015-06-17 09:40:37",
+        "type": "yii2-extension",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "yii2mod\\pie\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Dmitry Semenov",
+                "email": "disemx@gmail.com"
+            }
+        ],
+        "description": "Pie generator using d3pie.js",
+        "keywords": [
+            "piejs",
+            "yii2"
+        ]
+    },
+    {
+        "name": "yii2mod/yii2-c3-chart",
+        "version": "1.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/yii2mod/yii2-c3-chart.git",
+            "reference": "ada3ab391fd345051c6dea2eb13b4b7363c95578"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/yii2mod/yii2-c3-chart/zipball/ada3ab391fd345051c6dea2eb13b4b7363c95578",
+            "reference": "ada3ab391fd345051c6dea2eb13b4b7363c95578",
+            "shasum": ""
+        },
+        "require": {
+            "bower-asset/c3": "*",
+            "yii2mod/yii2-pie": "*",
+            "yiisoft/yii2": "*",
+            "yiisoft/yii2-bootstrap": "*"
+        },
+        "time": "2016-08-30 11:27:55",
+        "type": "yii2-extension",
+        "extra": {
+            "asset-installer-paths": {
+                "bower-asset-library": "vendor/bower"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "yii2mod\\c3\\chart\\": ""
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Igor Chepurnoy",
+                "email": "igorzfort@gmail.com"
+            }
+        ],
+        "description": "Yii2 wrapper for D3-based reusable chart library",
+        "keywords": [
+            "yii2",
+            "yii2 c3 chart",
+            "yii2 c3.js"
+        ]
     }
 ]

@@ -48,4 +48,31 @@ return array (
       '@yii/faker' => $vendorDir . '/yiisoft/yii2-faker',
     ),
   ),
+  'yiisoft/yii2-mongodb' => 
+  array (
+    'name' => 'yiisoft/yii2-mongodb',
+    'version' => '2.1.2.0',
+    'alias' => 
+    array (
+      '@yii/mongodb' => $vendorDir . '/yiisoft/yii2-mongodb',
+    ),
+  ),
+  'yii2mod/yii2-pie' => 
+  array (
+    'name' => 'yii2mod/yii2-pie',
+    'version' => '1.0.0.0',
+    'alias' => 
+    array (
+      '@yii2mod/pie' => $vendorDir . '/yii2mod/yii2-pie',
+    ),
+  ),
+  'yii2mod/yii2-c3-chart' => 
+  array (
+    'name' => 'yii2mod/yii2-c3-chart',
+    'version' => '1.0.0.0',
+    'alias' => 
+    array (
+      '@yii2mod/c3/chart' => $vendorDir . '/yii2mod/yii2-c3-chart',
+    ),
+  ),
 );

@@ -59,4 +59,9 @@ class Product extends \yii\db\ActiveRecord
         ];
     }
 
+    public function getViewstat()
+    {
+        return $this->hasMany(Viewstat::className(), ['prod_id' => 'id']);
+    }
+
 }

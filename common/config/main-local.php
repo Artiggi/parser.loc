@@ -3,10 +3,14 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=',
+            'dsn' => 'mysql:host=localhost;dbname=parser',
             'username' => 'root',
-            'password' => '',
+            'password' => 'aa5583555835',
             'charset' => 'utf8',
+        ],
+        'mongodb' => [
+            'class' => '\yii\mongodb\Connection',
+            'dsn' => 'mongodb://root:123213@localhost:27017/parser',
         ],
         'mailer' => [
             'class' => 'yii\swiftmailer\Mailer',
@@ -16,5 +20,11 @@ return [
             // for the mailer to send real emails.
             'useFileTransport' => true,
         ],
+        'formatter' => [
+            'class' => 'yii\i18n\Formatter',
+            'dateFormat' => 'php:d.m.Y',
+            'datetimeFormat' => 'php:d.m.Y H:i:s',
+            'timeFormat' => 'php:H:i:s',
+        ]
     ],
 ];

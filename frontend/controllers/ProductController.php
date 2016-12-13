@@ -2,12 +2,14 @@
 
 namespace frontend\controllers;
 
+use frontend\models\Viewstat;
 use Yii;
 use frontend\models\Product;
 use frontend\models\ProductSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\helpers\ArrayHelper;
 
 /**
  * ProductController implements the CRUD actions for Product model.
@@ -54,6 +56,11 @@ class ProductController extends Controller
         $tekview = Product::findOne($id);
         $tekview->views = $tekview->views + 1;
         $tekview->save();
+
+        $newview = new Viewstat();
+        $newview->prod_id = $id;
+        $newview->daystat = Yii::$app->formatter->asDate (date ('U'));
+        $newview->save();
 
         return $this->render('view', [
             'model' => $this->findModel($id),
@@ -112,6 +119,29 @@ class ProductController extends Controller
 
         return $this->redirect(['index']);
     }
+
+
+    public function actionGraph ($id)
+    {
+        $arr = Viewstat::find()
+            ->select([
+                'count(prod_id) as prod_id',
+                'daystat'
+            ])
+            ->where(['prod_id' => $id])
+            ->groupBy('daystat')
+            ->all();
+
+        $stats = ArrayHelper::map($arr, 'daystat', 'prod_id');
+        $titles = ['x'=>'Views'];
+        $stats = array_merge($titles, $stats);
+
+        return $this->render('graph',[
+            'stats'=>$stats,
+        ]);
+    }
+
+
 
     /**
      * Finds the Product model based on its primary key value.

@@ -16,6 +16,16 @@ return [
         'gii' => [
             'class' => 'yii\gii\Module',
         ],
+
+        'giiMongo' => [
+            'class' => 'yii\gii\Module',
+            'generators' => [
+                'mongoDbModel' => [
+                    'class' => 'yii\mongodb\gii\model\Generator'
+                ]
+            ],
+        ],
+
     ],
     'components' => [
         'request' => [
